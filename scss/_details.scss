@@ -1,0 +1,59 @@
+@use "variables" as v;
+
+.details-container {
+    width: 100%;
+    height: 450px;
+    display: none;
+    align-content: space-between;
+    justify-items: center;
+    margin: 20px 0;
+    position: relative;
+    &__title {
+        width: 80%;
+        height: 40px;
+        background-color: v.$secondary-color;
+        border-radius: 20px;
+        display: grid;
+        align-items: center;
+        h2 {
+            text-align: center;
+            text-transform: uppercase;
+            color: v.$white;
+        }
+    }
+    img {
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        bottom: 170px;
+
+    }
+    &__details {
+        width: 80%;
+        height: 200px;
+        background-color: v.$secondary-color;
+        border-radius: 13px;
+        display: grid;
+        align-items: center;
+        padding: 15px;
+        &--spec {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: space-evenly;
+            span {
+                display: block;
+                width: 80px;
+                font-weight: v.$bold-weight;
+                color: v.$white;
+                text-transform: uppercase;
+                text-align: left;
+                letter-spacing: 1px;
+
+            }
+        }
+
+
+        
+    }
+}
