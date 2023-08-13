@@ -11,4 +11,9 @@ const fetchAll = async () => {
     return details
 }
 
-export {fetchAll}
+const fetchById = async id => {
+    const response = await axios.get(`${BASE_URL}${id}`);
+    return response.data;
+}
+
+export { fetchAll, fetchById }
